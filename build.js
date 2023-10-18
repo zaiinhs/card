@@ -12,14 +12,13 @@ const options = {
 };
 
 const scheme = {
-  primary: chalk.rgb(172, 20, 90),
   secondary: chalk.cyan,
   light: chalk.white,
   shade: chalk.gray,
 };
 
 const data = {
-  name: scheme.primary.bold('Zainal Abidin @zaiinhs'),
+  name: scheme.light('Zainal Abidin @zaiinhs'),
   work: scheme.light('Software Engineer (Frontend)'),
 
   twitter: `${scheme.shade('https://twitter.com/')}${scheme.secondary('zaiinhs')}`,
@@ -58,5 +57,5 @@ const output = heading + newline + // data.name
                npming + newline + newline + // data.labelnpm + data.npm
                carding // data.labelCard + data.npx
 
-fs.writeFileSync(path.join(__dirname, 'bin/output'), scheme.primary(boxen(output, options)))
+fs.writeFileSync(path.join(__dirname, 'bin/output'), boxen(output, options))
 
