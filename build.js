@@ -19,26 +19,28 @@ const scheme = {
 };
 
 const data = {
-  name: scheme.primary.bold('                  Zainal Abidin @zaiinhs'),
+  name: scheme.primary.bold('Zainal Abidin @zaiinhs'),
   work: scheme.light('Software Engineer (Frontend)'),
-  twitter: scheme.shade('https://twitter.com/') + scheme.secondary('zaiinhs'),
+
+  twitter: `${scheme.shade('https://twitter.com/')}${scheme.secondary('zaiinhs')}`,
+  // twitter: scheme.shade('https://twitter.com/') + scheme.secondary('zaiinhs'),
   npm: scheme.shade('https://npmjs.com/') + scheme.secondary('~zaiinhs'),
   github: scheme.shade('https://github.com/') + scheme.secondary('zaiinhs'),
   linkedin: scheme.shade('https://linkedin.com/in/') + scheme.secondary('zaiinhs'),
   web: scheme.secondary('https://zaiinhs.vercel.app'),
   npx: scheme.shade('npx ') + scheme.secondary('zaiinhs'),
-  labelWork: scheme.light.bold('       Work:'),
-  labelTwitter: scheme.light.bold('    Twitter:'),
-  labelnpm: scheme.light.bold('        npm:'),
-  labelGitHub: scheme.light.bold('     GitHub:'),
-  labelLinkedIn: scheme.light.bold('   LinkedIn:'),
-  labelWeb: scheme.light.bold('        Web:'),
-  labelCard: scheme.light.bold('       Card:')
+  labelWork: scheme.light.bold('Work:'),
+  labelTwitter: scheme.light.bold('Twitter:'),
+  labelnpm: scheme.light.bold('npm:'),
+  labelGitHub: scheme.light.bold('GitHub:'),
+  labelLinkedIn: scheme.light.bold('LinkedIn:'),
+  labelWeb: scheme.light.bold('Web:'),
+  labelCard: scheme.light.bold('Card:')
 };
 
 const newline = '\n'
 const heading = `${data.name}`
-const working = `                 ${data.work}`
+const working = `${data.work}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const npming = `${data.labelnpm}  ${data.npm}`
 const githubing = `${data.labelGitHub}  ${data.github}`

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "you can install package in local device",
   "main": "/bin/card.js",
+  "type": "module",
   "bin": {
     "zaiinhs": "./bin/card.js"
   },
