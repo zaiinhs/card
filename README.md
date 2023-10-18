@@ -7,3 +7,4 @@ It's me, Zainal!
 
 `npx zaiinhs`
 
+<img src="assets/Screenshot.png"/>
