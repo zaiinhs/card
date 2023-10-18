@@ -1,0 +1,3 @@
+# zaiinhs/card
+
+`npx zaiinhs`
